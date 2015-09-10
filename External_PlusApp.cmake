@@ -86,6 +86,6 @@ ELSE()
     )
 ENDIF()
 
-# [BiiGTK] Patch PlusLib.
+# [BiiGTK] Patch PlusApp.
 find_package(CMakeAll REQUIRED HINTS ${BiiGTK_CMakeAll_DIR})
-cma_patch_project(PlusLib ${BiiGTK_PATCH_PlusLib})
+cma_patch_project(PlusApp ${BiiGTK_PATCH_PlusApp})
