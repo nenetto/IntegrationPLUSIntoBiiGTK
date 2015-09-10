@@ -258,3 +258,7 @@ ExternalProject_Add(PlusLib
   DEPENDS ${PlusLib_DEPENDENCIES}
   )
 SET(PLUSLIB_DIR ${CMAKE_BINARY_DIR}/PlusLib-bin CACHE PATH "The directory containing PlusLib binaries" FORCE)                
+
+# [BiiGTK] Patch PlusLib.
+find_package(CMakeAll REQUIRED HINTS ${BiiGTK_CMakeAll_DIR})
+cma_patch_project(PlusLib ${BiiGTK_PATCH_PlusLib})
