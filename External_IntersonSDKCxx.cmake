@@ -22,7 +22,7 @@ IF(IntersonSDKCxx_DIR)
 ELSE(IntersonSDKCxx_DIR)
 
   # IntersonSDKCxx has not been built yet, so download and build it as an external project
-  SET (IntersonSDKCxx_REPOSITORY ${GIT_PROTOCOL}://github.com/KitwareMedical/IntersonSDKCxx.git)
+  SET (IntersonSDKCxx_REPOSITORY ${GIT_PROTOCOL}://github.com/nenetto/IntersonProbeWrapper.git)
   SET (IntersonSDKCxx_GIT_TAG 819d620052be7e9b232e12d8946793c15cfbf5a3)
 
   SET (PLUS_IntersonSDKCxx_SRC_DIR "${CMAKE_BINARY_DIR}/IntersonSDKCxx")
